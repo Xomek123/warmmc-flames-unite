@@ -34,7 +34,7 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4 transition-all duration-200 hover:shadow-fire">
+          <Button variant="hero" size="lg" className="text-lg px-8 py-4 transition-all duration-600 hover:shadow-fire">
             <Server className="mr-2" />
             Dołącz do Serwera
           </Button>
