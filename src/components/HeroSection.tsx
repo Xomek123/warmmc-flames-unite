@@ -50,15 +50,15 @@ const HeroSection = () => {
             <div className="text-2xl font-bold text-fire-accent">1,247</div>
             <div className="text-sm text-muted-foreground">Graczy Online</div>
           </Card>
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-350 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">24/7</div>
             <div className="text-sm text-muted-foreground">Dostępność</div>
           </Card>
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-350 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">50+</div>
             <div className="text-sm text-muted-foreground">Tryby Gry</div>
           </Card>
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-350 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">99.9%</div>
             <div className="text-sm text-muted-foreground">Stabilność</div>
           </Card>

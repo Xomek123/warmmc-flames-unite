@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MessageSquare, Users, Calendar, Award } from "lucide-react";
-
 const CommunitySection = () => {
-  return (
-    <section className="py-20 px-6 bg-gradient-warm">
+  return <section className="py-20 px-6 bg-gradient-warm">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-fire bg-clip-text text-transparent">
@@ -26,7 +24,7 @@ const CommunitySection = () => {
               Dołącz do naszej aktywnej społeczności Discord z ponad 15,000 członków. Uzyskaj natychmiastową pomoc, 
               uczestniczj w wydarzeniach i zawieraj nowe znajomości!
             </p>
-            <Button variant="fire" size="lg" className="w-full transition-all duration-500">
+            <Button variant="fire" size="lg" className="w-full transition-all duration-350">
               Dołącz do Discord
             </Button>
           </Card>
@@ -90,8 +88,6 @@ const CommunitySection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CommunitySection;
