@@ -38,38 +38,38 @@ const HeroSection = () => {
         </div>
         
         <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Experience the warmth of community in our premium Minecraft server. 
-          Join thousands of players in an epic adventure!
+          Poczuj ciepło społeczności na naszym premium serwerze Minecraft. 
+          Dołącz do tysięcy graczy w epickich przygodach!
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+          <Button variant="hero" size="lg" className="text-lg px-8 py-4 transition-all duration-500 hover:shadow-fire">
             <Server className="mr-2" />
-            Join Server
+            Dołącz do Serwera
           </Button>
-          <Button variant="ember" size="lg" className="text-lg px-8 py-4">
+          <Button variant="ember" size="lg" className="text-lg px-8 py-4 transition-all duration-500 hover:shadow-glow">
             <Users className="mr-2" />
-            Discord Community
+            Discord Społeczność
           </Button>
         </div>
 
         {/* Server stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">1,247</div>
-            <div className="text-sm text-muted-foreground">Online Players</div>
+            <div className="text-sm text-muted-foreground">Graczy Online</div>
           </Card>
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">24/7</div>
-            <div className="text-sm text-muted-foreground">Uptime</div>
+            <div className="text-sm text-muted-foreground">Dostępność</div>
           </Card>
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">50+</div>
-            <div className="text-sm text-muted-foreground">Game Modes</div>
+            <div className="text-sm text-muted-foreground">Tryby Gry</div>
           </Card>
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">99.9%</div>
-            <div className="text-sm text-muted-foreground">Stability</div>
+            <div className="text-sm text-muted-foreground">Stabilność</div>
           </Card>
         </div>
       </div>

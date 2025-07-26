@@ -7,36 +7,36 @@ import {
 
 const faqs = [
   {
-    question: "How do I join the WarmMC.EU server?",
-    answer: "Simply open Minecraft, go to Multiplayer, and add our server IP: play.warmmc.eu. Make sure you're using the correct version (we support 1.16-1.21)."
+    question: "Jak dołączyć do serwera WarmMC.EU?",
+    answer: "Po prostu otwórz Minecraft, przejdź do Multiplayer i dodaj IP naszego serwera: play.warmmc.eu. Upewnij się, że używasz odpowiedniej wersji (obsługujemy 1.16-1.21)."
   },
   {
-    question: "Is the server free to play?",
-    answer: "Yes! WarmMC.EU is completely free to play. We offer optional premium ranks and cosmetics to support the server, but all core gameplay features are available to everyone."
+    question: "Czy serwer jest darmowy?",
+    answer: "Tak! WarmMC.EU jest całkowicie darmowy. Oferujemy opcjonalne rangi premium i kosmetyki aby wspierać serwer, ale wszystkie podstawowe funkcje rozgrywki są dostępne dla każdego."
   },
   {
-    question: "What version of Minecraft do you support?",
-    answer: "We support Minecraft Java Edition versions 1.16 through 1.21. We recommend using the latest version for the best experience and all features."
+    question: "Jaką wersję Minecraft obsługujecie?",
+    answer: "Obsługujemy Minecraft Java Edition w wersjach od 1.16 do 1.21. Zalecamy używanie najnowszej wersji dla najlepszego doświadczenia i wszystkich funkcji."
   },
   {
-    question: "Are there any rules I need to follow?",
-    answer: "Yes, we have a few simple rules to ensure everyone has fun: no griefing, no cheating/hacking, be respectful to other players, and no inappropriate content. Full rules are available on our Discord."
+    question: "Czy są jakieś zasady których muszę przestrzegać?",
+    answer: "Tak, mamy kilka prostych zasad aby wszyscy dobrze się bawili: zakaz griefingu, zakaz cheaterstwa/hackowania, szanuj innych graczy i zakaz nieodpowiednich treści. Pełne zasady są dostępne na naszym Discordzie."
   },
   {
-    question: "How do I claim land and protect my builds?",
-    answer: "Use the /claim command with a golden shovel to claim land. You can also create towns and nations for larger communities. All claimed areas are automatically protected from griefing."
+    question: "Jak mogę zabezpieczyć ziemię i chronić swoje budowle?",
+    answer: "Użyj komendy /claim ze złotą łopatą aby zabezpieczyć ziemię. Możesz również tworzyć miasta i narody dla większych społeczności. Wszystkie zabezpieczone obszary są automatycznie chronione przed griefingiem."
   },
   {
-    question: "Can I play with friends who are new to the server?",
-    answer: "Absolutely! You can invite friends, create parties, and even start your own town together. We have a referral system that rewards both you and your friends when they join."
+    question: "Czy mogę grać ze znajomymi którzy są nowi na serwerze?",
+    answer: "Oczywiście! Możesz zapraszać znajomych, tworzyć partie, a nawet zakładać własne miasto razem. Mamy system polecających który nagradza zarówno Ciebie jak i Twoich znajomych gdy dołączą."
   },
   {
-    question: "What should I do if I encounter a bug or need help?",
-    answer: "Join our Discord server and create a ticket in the #support channel. Our staff team is active and will help you resolve any issues quickly."
+    question: "Co powinienem zrobić jeśli napotkam błąd lub potrzebuję pomocy?",
+    answer: "Dołącz na nasz serwer Discord i stwórz ticket w kanale #support. Nasz zespół administracji jest aktywny i szybko pomoże Ci rozwiązać wszelkie problemy."
   },
   {
-    question: "Are there regular events and updates?",
-    answer: "Yes! We host weekly events, seasonal celebrations, building contests, and regular content updates. Follow our Discord announcements to stay updated on all events."
+    question: "Czy są regularne wydarzenia i aktualizacje?",
+    answer: "Tak! Organizujemy cotygodniowe wydarzenia, sezonowe celebracje, konkursy budowlane i regularne aktualizacje contentu. Śledź ogłoszenia na naszym Discordzie aby być na bieżąco ze wszystkimi wydarzeniami."
   }
 ];
 
@@ -46,10 +46,10 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-fire bg-clip-text text-transparent">
-            Frequently Asked Questions
+            Często Zadawane Pytania
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about joining and playing on WarmMC.EU
+            Wszystko czego potrzebujesz wiedzieć o dołączeniu i grze na WarmMC.EU
           </p>
         </div>
 
@@ -58,7 +58,7 @@ const FAQSection = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg px-6 hover:shadow-warm transition-all duration-300"
+              className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg px-6 hover:shadow-warm transition-all duration-500 hover:scale-102 transform"
             >
               <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-fire-accent transition-colors">
                 {faq.question}

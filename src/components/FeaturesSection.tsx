@@ -4,33 +4,33 @@ import { Sword, Crown, Shield, Gamepad2, Trophy, Heart } from "lucide-react";
 const features = [
   {
     icon: Sword,
-    title: "Epic PvP Battles",
-    description: "Engage in thrilling player vs player combat with custom weapons and balanced gameplay mechanics."
+    title: "Epickie Walki PvP",
+    description: "Weź udział w ekscytujących walkach gracz vs gracz z niestandardową bronią i zbalansowaną mechaniką gry."
   },
   {
     icon: Crown,
-    title: "Kingdom Building",
-    description: "Create and manage your own kingdom, form alliances, and conquer territories in our vast world."
+    title: "Budowanie Królestwa",
+    description: "Stwórz i zarządzaj własnym królestwem, zawieraj sojusze i podbijaj terytoria w naszym rozległym świecie."
   },
   {
     icon: Shield,
-    title: "Advanced Protection",
-    description: "Your builds are safe with our advanced grief protection and rollback systems."
+    title: "Zaawansowana Ochrona",
+    description: "Twoje budowle są bezpieczne dzięki naszym zaawansowanym systemom ochrony przed griefingiem."
   },
   {
     icon: Gamepad2,
-    title: "Multiple Game Modes",
-    description: "From survival to creative, skyblock to factions - find your perfect gaming experience."
+    title: "Wiele Trybów Gry",
+    description: "Od survival po creative, skyblock po factions - znajdź swoje idealne doświadczenie gamingowe."
   },
   {
     icon: Trophy,
-    title: "Competitive Events",
-    description: "Weekly tournaments, building contests, and seasonal events with amazing rewards."
+    title: "Konkurencyjne Wydarzenia",
+    description: "Cotygodniowe turnieje, konkursy budowlane i sezonowe wydarzenia z niesamowitymi nagrodami."
   },
   {
     icon: Heart,
-    title: "Friendly Community",
-    description: "Join our welcoming community of players from around the world in a toxicity-free environment."
+    title: "Przyjazna Społeczność",
+    description: "Dołącz do naszej przyjaznej społeczności graczy z całego świata w środowisku wolnym od toksyczności."
   }
 ];
 
@@ -40,10 +40,10 @@ const FeaturesSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-fire bg-clip-text text-transparent">
-            Why Choose WarmMC?
+            Dlaczego WarmMC?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover what makes our server the perfect place to call home in the Minecraft universe
+            Odkryj, co czyni nasz serwer idealnym miejscem do nazywania domem w uniwersum Minecraft
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="bg-card/70 backdrop-blur-sm border-border/50 p-6 hover:shadow-warm transition-all duration-300 hover:scale-105 group"
+              className="bg-card/70 backdrop-blur-sm border-border/50 p-6 hover:shadow-warm transition-all duration-500 hover:scale-105 group transform"
             >
               <div className="flex items-center mb-4">
                 <div className="p-3 rounded-full bg-gradient-fire mr-4 group-hover:animate-fire-flicker">
