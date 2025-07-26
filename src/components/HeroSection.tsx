@@ -2,31 +2,22 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Server, Users, Zap, Globe } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with fire overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`
+    }} />
       <div className="absolute inset-0 bg-gradient-warm opacity-80" />
       
       {/* Floating ember particles */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-fire-accent rounded-full animate-ember-float opacity-70"
-            style={{
-              left: `${20 + i * 10}%`,
-              bottom: `${10 + (i % 3) * 20}%`,
-              animationDelay: `${i * 0.8}s`,
-              animationDuration: `${4 + i * 0.5}s`
-            }}
-          />
-        ))}
+        {[...Array(8)].map((_, i) => <div key={i} className="absolute w-1 h-1 bg-fire-accent rounded-full animate-ember-float opacity-70" style={{
+        left: `${20 + i * 10}%`,
+        bottom: `${10 + i % 3 * 20}%`,
+        animationDelay: `${i * 0.8}s`,
+        animationDuration: `${4 + i * 0.5}s`
+      }} />)}
       </div>
 
       {/* Main content */}
@@ -43,7 +34,7 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4 transition-all duration-500 hover:shadow-fire">
+          <Button variant="hero" size="lg" className="text-lg px-8 py-4 transition-all duration-200 hover:shadow-fire">
             <Server className="mr-2" />
             Dołącz do Serwera
           </Button>
@@ -55,7 +46,7 @@ const HeroSection = () => {
 
         {/* Server stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-500 hover:scale-105">
+          <Card className="bg-card/50 backdrop-blur-sm border-fire-accent/30 p-4 text-center animate-glow-pulse transition-all duration-350 hover:scale-105">
             <div className="text-2xl font-bold text-fire-accent">1,247</div>
             <div className="text-sm text-muted-foreground">Graczy Online</div>
           </Card>
@@ -76,8 +67,6 @@ const HeroSection = () => {
 
       {/* Bottom gradient overlay */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
